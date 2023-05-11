@@ -15,10 +15,28 @@
       $('.nav-burger__container').classList.toggle('nav-burger__container--toggle')
     }
 
+    const defocus = () => {
+      document.addEventListener('click', function(e){   
+        if (!document.getElementById('nav-burger__container').contains(e.target)){
+          toggleHamburger()
+          rotate()
+      }})
+    }
+
+    const rotate = () => {
+      document.querySelector(".nav__logo-item").classList.toggle("nav__logo-item--shrink");
+    }
+
     const init = () => {
       $on(
-          $on($('.nav-button'), 'click', () => (toggleHamburger())),
+          $on($('.nav-burger__container'), 'click', () => (toggleHamburger())),
       )
+
+      $on(
+        $on($$('.nav__item__link'), 'click', () => (toggleHamburger())),
+    )
+
+    defocus()
   }
   init()
 }

@@ -19,15 +19,19 @@
                     <nav class="nav nav--sticky">
                         <div class="nav__content">
                             <ul class="nav__list">
-                                <li class="nav__item nav__menu"><a class="nav__link" href="#lorem1">Lorem1</a></li>
-                                <li class="nav__item nav__menu"><a class="nav__link" href="#lorem2">Lorem2</a></li>
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__intro">Introduction</a></li>
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__setting">Setting</a></li>
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__characters">Characters</a></li>
+
                                 <li class="nav__item nav__menu">
-                                    <a class="nav__link" href="#home">
+                                    <a class="nav__item__link" href="#content__hero">
                                         <img class="nav__logo" src="assets/logo.png" alt="Logo">
                                     </a>
                                 </li>
-                                <li class="nav__item nav__menu"><a class="nav__link" href="#lorem3">Lorem3</a></li>
-                                <li class="nav__item nav__menu"><a class="nav__link" href="#lorem4">Lorem4</a></li>
+
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__factions">Factions</a></li>
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__spells">Spells&Items</a></li>
+                                <li class="nav__item nav__menu"><a class="nav__item__link" href="#content__patreon">Patreon</a></li>
                             </ul>
                         </div>
                         <div class="nav__content-mobile">
@@ -43,14 +47,16 @@
                                     <span class="nav-button__line--3 nav-button__line"></span>
                                 </div>
                             </div>
-                            <div class="nav-burger__container">
+                            <div id='nav-burger__container' class="nav-burger__container">
                                 <div class="nav__burger">
                                     <!--div class="nav__overlay"></div !-->
                                     <ul class="nav__list">
-                                        <li class="nav__item"><a class="nav__link" href="#lorem1">Lorem1</a></li>
-                                        <li class="nav__item"><a class="nav__link" href="#lorem2">Lorem2</a></li>
-                                        <li class="nav__item"><a class="nav__link" href="#lorem3">Lorem3</a></li>
-                                        <li class="nav__item"><a class="nav__link" href="#lorem4">Lorem4</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__intro">Introduction</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__setting">Setting</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__characters">Characters</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__factions">Factions</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__spells">Spells&Items</a></li>
+                                        <li class="nav__item"><a class="nav__item__link" href="#content__patreon">Patreon</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -60,20 +66,20 @@
             </header>
 
             <main class="content">
-                <div class="content__div">
+                <div class="content__div" id="content__hero">
                     <div class="content__outer">
                         <div class="content__inner">
                             <div class="content__hero no-select">
-                                <img class="content__image" src="assets/landing.png" alt="Logo">
+                                <img class="content__hero-image" src="assets/landing.png" alt="Logo">
                             </div>
                         </div>
                     </div>
-                    <div class="content__separator--drip"></div>
+                    <div class="separator--drip"></div>
                 </div>
 
-                <div class="content__div no-select" id="lorem1">
+                <div class="content__div no-select" id="content__intro">
                     <h1>Call for blood...</h1>
-                    <div class="content__intro">
+                    <div class="content__intro content__column">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
                             consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -85,43 +91,173 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
                         </p>
                     </div>
-                    <div class="content__separator--heart"></div>
+                    <div class="separator--heart"></div>
                 </div>
 
-
-                <div class="content__div" id="lorem2">
+                <div class="content__div" id="content__setting">
                     <div class="content__setting">
                         <di class="no-select">
                             <h1>Blood will tell...</h1>
                         </div>
                         <div class="content__video no-select">
-                            <iframe src="https://www.youtube.com/embed/MeYrOA48PlI" title="this music will make you believe in passion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                            <iframe class="video" src="https://www.youtube.com/embed/MeYrOA48PlI" title="this music will make you believe in passion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                         </div>
                         <div class="content__description-outer">
-                            <div class="content__description">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
-                                    consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
-                                    consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-                                </p>
-    
-                                <button class="button">Buy Now</button>
+                            <div class="content__description-inner">
+                                <div class="content__description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
+                                        consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
+                                        consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                    </p>
+                                    <button class="button">Buy Now</button>
+                                </div>
                             </div>
-                            <div class="content__separator--drip"></div>
+                        </div>
+                        <div class="separator--drip"></div>
+                    </div>
+                </div>
+
+                <div class="content__div no-select" id="content__characters">
+                    <h1>Characters</h1>
+                    <div class="content__characters content__column">
+                        <div class="content__characters-card horizontal__card">
+                            <div class="content__characters-card-image horizontal__card-image">
+                                <img src="./assets/logo.png" alt="image">
+                            </div>
+                            <div class="content__characters-card-description horizontal__card-description">
+                                <h3>Character 1</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content__characters-card horizontal__card">
+                            <div class="content__characters-card-image horizontal__card-image">
+                                <img src="./assets/logo.png" alt="image">
+                            </div>
+                            <div class="content__characters-card-description horizontal__card-description">
+                                <h3>Character 2</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content__characters-card horizontal__card">
+                            <div class="content__characters-card-image horizontal__card-image">
+                                <img src="./assets/logo.png" alt="image">
+                            </div>
+                            <div class="content__characters-card-description horizontal__card-description">
+                                <h3>Character 3</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content__characters-card horizontal__card">
+                            <div class="content__characters-card-image horizontal__card-image">
+                                <img src="./assets/logo.png" alt="image">
+                            </div>
+                            <div class="content__characters-card-description horizontal__card-description">
+                                <h3>Character 4</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="separator--heart"></div>
+                </div>
+
+                <div class="content__div no-select" id="content__factions">
+                    <div class="content__factions">
+                        <h1>Factions</h1>
+                        <div class="content__factions-cards content__row">
+                            <div class="vertical__card">
+                                <img class="vertical__card-imgage" src="./assets/logo.png">
+                                <div class="vertical__card-content">
+                                    <h4>X</h4> 
+                                </div>
+                              </div>
+    
+                              <div class="vertical__card">
+                                <img  class="vertical__card-imgage" src="./assets/logo.png">
+                                <div class="vertical__card-content">
+                                  <h4>X</h4> 
+                                </div>
+                              </div>
+    
+                              <div class="vertical__card">
+                                <img  class="vertical__card-imgage" src="./assets/logo.png">
+                                <div class="vertical__card-content">
+                                  <h4>X</h4> 
+                                </div>
+                              </div>
+    
+                              <div class="vertical__card">
+                                <img  class="vertical__card-imgage" src="./assets/logo.png">
+                                <div class="vertical__card-content">
+                                    <h4>X</h4> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="separator--heart"></div>
+                </div>
+
+                <div class="content__div no-select" id="content__spells">
+                    <h1>Spells & Items</h1>
+                    <div class="content__spells content__row">
+                        <div class="content__spells-icon">
+                            <img class="content__spells-icon" src="./assets/logo.png">
+                        </div>
+                        <div class="content__spells-icon">
+                            <img class="content__spells-icon" src="./assets/logo.png">
+                        </div>
+                        <div class="content__spells-icon">
+                            <img class="content__spells-icon" src="./assets/logo.png">
+                        </div>
+                        <div class="content__spells-icon">
+                            <img class="content__spells-icon" src="./assets/logo.png">
+                        </div>
+                    </div>
+                    <div class="separator--heart"></div>
+                </div>
+
+                <div class="content__div" id="content__patreon">
+                    <div class="separator--drip separator--drip--inverted separator--drip--bright"></div>
+                    <div class="content__patreon-outer">
+                        <div class="content__patreon">
+                            <div class="no-select">
+                                <h1>Patreon</h1>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
+                                consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, <br>
+                                consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                            </p>
+
+                            <button class="button">Visit our Patreon</button>
+                        </div>
+                    </div>
+                    <div class="separator--drip separator--drip--bright"></div>
                 </div>
             </main>
     
             <footer class="footer">
                 <div class="footer__container">
-                    <div class="copyright-container">
-                        <p class="copyright-container__item">
+                    <div class="footer__copyright-container">
+                        <p class="footer__copyright-container__item">
                             © 2023 HitDieProductions 
                         </p>
                     </div>
