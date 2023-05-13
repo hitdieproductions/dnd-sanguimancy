@@ -182,6 +182,8 @@ body {
             align-self: center;
             align-items: center;
             width: 100%;
+            display: flex;
+            justify-content: center;
 
             @media (min-width: 481px) { 
                 & {  padding: 0; } 
@@ -199,6 +201,8 @@ body {
 
     &__menu {
        display: none;
+       margin-left: 10px;
+       margin-right: 10px;
 
        @media (min-width: 481px) { 
             & {
@@ -207,8 +211,7 @@ body {
                 width: 4em;
             }
             
-            //Todo
-            &:nth-child(4) {
+            &__logo-container {
                 margin-top: 0;
             }
         }
