@@ -119,17 +119,19 @@
     &__video {
         width: 100%;
         background-color: #1F0021;
+        height: fit-content;
         display: flex;
         align-items: center;
     }
 
     &__spells {
         display: flex;
-        margin: 5% 10%;
+        margin: 5% auto;
         padding: 10px;
         align-content: center;
         font-size: small;
         justify-content: space-around;
+        max-width: 60em;
 
         &-icon {
             width: 5em;
@@ -221,6 +223,13 @@
         margin-left: 1em;
         text-align: justify;
     }
+
+    @media (min-width: 1025px) { 
+        & {
+            max-width: 60em;
+            height: auto;
+        }
+    }
 }
 
 .vertical__card {
@@ -249,10 +258,26 @@
     width: 70%;
     margin: 0 auto;
     padding: 0;
+    aspect-ratio: 1/0.5;
+
+    @media (min-width: 481px) { 
+        & {
+            width: 30em;
+            height: auto;
+        }
+    }
 
     @media (min-width: 1025px) { 
         & {
-            width: 30em;
+            width: 50em;
+        }
+    }
+}
+
+p {
+    @media (min-width: 1025px) { 
+        & {
+            max-width: 60em;
         }
     }
 }
