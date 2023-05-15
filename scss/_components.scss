@@ -43,6 +43,12 @@
 
 // Content 
 .content {
+    // Fix for fixed header and anchor links
+    &__div {
+        padding-top: 140px;
+        margin-top: -140px;
+    }
+    
     &__row {
         display: flex;
         flex-direction: row;
@@ -102,7 +108,7 @@
         }
     }
 
-    &__intro, &__description, &__factions, &__patreon {
+    &__intro, &__description, &__characters, &__factions, &__patreon {
         margin: 0 10%;
         text-align: center;
 
@@ -199,12 +205,13 @@
     }
 }
 
-.horizontal__card {
+.horizontal-card {
     display: flex;
     margin: 0 10%;
     padding: 10px;
     align-content: center;
     font-size: small;
+    flex-direction: column;
 
     &-image {
         height: auto;
@@ -215,7 +222,7 @@
     }
 
     &-image img {
-        width: 4em;
+        //width: 4em;
         align-self: center;
     }
 
@@ -226,13 +233,14 @@
 
     @media (min-width: 1025px) { 
         & {
+            flex-direction: row;
             max-width: 60em;
             height: auto;
         }
     }
 }
 
-.vertical__card {
+.vertical-card {
     box-shadow: 0 6px 5px 0 rgba(31, 0, 33, 0.9);
     transition: 0.3s;
     width: fit-content;
@@ -244,8 +252,14 @@
         background-color: rgba(255, 255, 255, 0.2);
     }
 
-    &-imgage {
-        width: 5em;
+    &-image {
+        width: 2.5em;
+
+        @media (min-width: 1025px) { 
+            & {
+                width: 5em;
+            }
+        }
     }
 
     &-content {
