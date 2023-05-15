@@ -56,7 +56,7 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        position: relative;
+        position: inherit;
         z-index: 1;
 
         @media (min-width: 481px) { 
@@ -128,13 +128,14 @@ body {
     &-burger__container {
         width: 100%;
         background-color: $primary-color;
-        transform: translateX(105%); /* move it horizontally off the page */
+        transform: translateY(-5%);
         transition: transform 0.3s ease-in-out;
         position: relative;
         z-index: -1;
+        padding-top: 1em;
 
         &--toggle {
-            transform: translateX(0)
+            transform: translateY(-150%)
         }
     }
 
