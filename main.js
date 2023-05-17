@@ -10,33 +10,25 @@
         return el
     }
 
-    //Show or hide menu
+    // Show or hide menu
     const toggleHamburger = () => {
       $('.nav-burger__container').classList.toggle('nav-burger__container--toggle')
     }
 
-    const defocus = () => {
-      document.addEventListener('click', function(e){   
-        if (!document.getElementById('nav-burger__container').contains(e.target)){
-          toggleHamburger()
-          rotate()
-      }})
-    }
+    // Handle click outside of menu
+    const clickOutsideBurgerMenu = e => {
+      const navButton = document.getElementById('nav-button__container')
+      const navMenu = document.getElementById('nav-burger__container')
 
-    const rotate = () => {
-      document.querySelector(".nav__logo-item").classList.toggle("nav__logo-item--shrink");
+      if (navButton.contains(e.target) || 
+      (!navMenu.contains(e.target) && navMenu.classList.contains('nav-burger__container--toggle')))
+        toggleHamburger()
     }
 
     const init = () => {
-      $on(
-          $on($('.nav-burger__container'), 'click', () => (toggleHamburger())),
-      )
+      $on($('.nav-burger__container'), 'click', () => (toggleHamburger()))
+      $on(window, 'click', e => (clickOutsideBurgerMenu(e)))
+    }
 
-      $on(
-        $on($$('.nav__item__link'), 'click', () => (toggleHamburger())),
-    )
-
-    defocus()
-  }
   init()
 }
