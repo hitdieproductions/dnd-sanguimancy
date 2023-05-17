@@ -110,7 +110,7 @@ body {
         align-self: center;
         height: 0.9em;
         width: 1.2em;
-
+        
         &:hover {
             &-button__line {
                  background-color: $dark-color;
@@ -127,16 +127,19 @@ body {
 
     &-burger__container {
         width: 100%;
-        background-color: $primary-color;
-        transform: translateY(-5%);
+        transform: translateY(-150%);
         transition: transform 0.3s ease-in-out;
         position: relative;
         z-index: -1;
-        padding-top: 1em;
 
         &--toggle {
-            transform: translateY(-150%)
+            transform: translateY(-5%);
         }
+    }
+
+    &-burger__container__inner {
+        padding-top: 1em;
+        background-color: $primary-color;
     }
 
     &__list {
