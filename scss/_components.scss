@@ -255,9 +255,17 @@
     &-image {
         width: 2.5em;
 
-        @media (min-width: 1025px) { 
+        @media (min-width: 481px) { 
             & {
                 width: 5em;
+                transition: width 0.3s ease-in-out;
+            }
+        }
+
+        @media (min-width: 1025px) { 
+            & {
+                width: 7em;
+                transition: width 0.3s ease-in-out;
             }
         }
     }
